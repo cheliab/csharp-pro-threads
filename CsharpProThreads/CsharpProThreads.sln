@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join_001", "Thread_J
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join_002", "Thread_Join_002\Thread_Join_002.csproj", "{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_003", "Thread_003\Thread_003.csproj", "{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
