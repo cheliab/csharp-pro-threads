@@ -18,6 +18,12 @@ namespace Thread_Abort_004
             Thread thread = new Thread(Procedure);
             thread.Start();
             
+            Thread.Sleep(2000);
+            
+            thread.Abort(); // помечен как устаревший
+
+            thread.Join();
+            
             Console.ReadLine();
         }
     }
