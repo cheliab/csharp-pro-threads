@@ -1,14 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join_001", "Thread_Join_001\Thread_Join_001.csproj", "{DFD64E38-8715-4A2A-9954-2AB8117B4F5C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_001_Thread_Join", "N_001_Thread_Join\N_001_Thread_Join.csproj", "{DFD64E38-8715-4A2A-9954-2AB8117B4F5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Join_002", "Thread_Join_002\Thread_Join_002.csproj", "{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_002_Thread_Join", "N_002_Thread_Join\N_002_Thread_Join.csproj", "{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_003", "Thread_003\Thread_003.csproj", "{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_003_Thread", "N_003_Thread\N_003_Thread.csproj", "{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Thread_Abort_004", "Thread_Abort_004\Thread_Abort_004.csproj", "{3352DDCF-9BB7-4B7A-BF62-78C976B0F21E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort", "N_004_Thread_Abort\N_004_Thread_Abort.csproj", "{3352DDCF-9BB7-4B7A-BF62-78C976B0F21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_005_Thread_CancellationToken", "N_005_Thread_CancellationToken\N_005_Thread_CancellationToken.csproj", "{5B8E5979-07FB-4C82-9473-97754D2CBB30}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_02_CancellationToken", "N_004_Thread_Abort_02_CancellationToken\N_004_Thread_Abort_02_CancellationToken.csproj", "{5B8E5979-07FB-4C82-9473-97754D2CBB30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
