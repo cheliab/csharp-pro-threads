@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort", "N_004
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_02_CancellationToken", "N_004_Thread_Abort_02_CancellationToken\N_004_Thread_Abort_02_CancellationToken.csproj", "{5B8E5979-07FB-4C82-9473-97754D2CBB30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_03_OperationCanceledException", "N_004_Thread_Abort_03_OperationCanceledException\N_004_Thread_Abort_03_OperationCanceledException.csproj", "{01AB4E17-25A8-48FE-B0A0-71AB7452C079}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{5B8E5979-07FB-4C82-9473-97754D2CBB30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B8E5979-07FB-4C82-9473-97754D2CBB30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B8E5979-07FB-4C82-9473-97754D2CBB30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01AB4E17-25A8-48FE-B0A0-71AB7452C079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01AB4E17-25A8-48FE-B0A0-71AB7452C079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01AB4E17-25A8-48FE-B0A0-71AB7452C079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01AB4E17-25A8-48FE-B0A0-71AB7452C079}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
