@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_03_Opera
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_005_Thread_Foreground", "N_005_Thread_Foreground\N_005_Thread_Foreground.csproj", "{A9E2AE82-13A5-4A19-A269-BA10BC896889}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_006_Thread_Priority", "N_006_Thread_Priority\N_006_Thread_Priority.csproj", "{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{A9E2AE82-13A5-4A19-A269-BA10BC896889}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9E2AE82-13A5-4A19-A269-BA10BC896889}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9E2AE82-13A5-4A19-A269-BA10BC896889}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
