@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using System.Linq;
 using System.Threading;
 
@@ -12,6 +13,9 @@ namespace N_007_Thread_Interlocked
         /// </summary>
         private static long counter;
         
+        /// <summary>
+        /// Объект блокировки
+        /// </summary>
         private static object block = new object();
 
         private static void Procedure()
@@ -21,14 +25,15 @@ namespace N_007_Thread_Interlocked
             for (int i = 0; i < 1_000_000; i++)
             {
                 // 1.
-                counter++;
+                // counter++;
                 
                 // 2.
-                // lock (block)
-                // {
-                //     counter++;
-                // }
+                lock (block)
+                {
+                    counter++;
+                }
                 
+                // 3.
                 // Interlocked.Increment(ref counter);
             }
         }
@@ -45,9 +50,20 @@ namespace N_007_Thread_Interlocked
             for (int i = 0; i < 10; i++)
                 threads[i].Join();
             
-            Console.WriteLine($"Реальное значение счетчика = {counter}");
+            var nfi = new NumberFormatInfo();
+            nfi.NumberGroupSeparator = " "; // set the group separator to a space
+            
+            Console.WriteLine($"Реальное значение счетчика = {counter.ToString("N2", nfi)}");
             
             Console.ReadKey();
         }
     }
 }
+
+// Результат
+
+// 1. Без простой вариант
+// Ожидаемое значение счетчика = 10 000 000
+// Реальное значение счетчика = 3 946 430.00
+
+// 2. Критическая секция
