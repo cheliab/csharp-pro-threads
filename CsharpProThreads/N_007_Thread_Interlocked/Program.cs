@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using System.Threading;
 
 // Interlocked - Атомарные операции с переменными, доступными нескольким потокам
