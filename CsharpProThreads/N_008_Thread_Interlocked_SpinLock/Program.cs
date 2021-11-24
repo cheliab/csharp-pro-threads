@@ -82,6 +82,10 @@ namespace N_008_Thread_Interlocked_SpinLock
         /// <summary>
         /// Метод для потока
         /// </summary>
+        /// <remarks>
+        /// Кажись тут не правильный пример, так как поток сразу разблокируется после записи в файл и имитакция работы по факту не защищена
+        /// Х.з зачем такой сложный пример с файлами (вообще не наглядный)
+        /// </remarks>
         private static void Function()
         {
             using (new SpinLockManager(block)) // вызывается block.Enter();
@@ -90,6 +94,7 @@ namespace N_008_Thread_Interlocked_SpinLock
                 writer.Flush(); // Запись в файл и очистка буфера
             } // вызывается block.Exit();
 
+            // Имитация работы
             int time = random.Next(10, 200);
             Thread.Sleep(time); // Ждем рандомное время
 
@@ -99,9 +104,35 @@ namespace N_008_Thread_Interlocked_SpinLock
                 writer.Flush();
             } // Exit
         }
+
+        /// <summary>
+        /// Правильный вариант блокировки
+        /// </summary>
+        /// <remarks>
+        /// При таком выполнении блок с полезной работой защищен
+        /// т.к. последующие потоки будут сидеть в цикле пока первый поток не выполнится
+        /// Хотя может я не до конца понял суть примера
+        /// </remarks>
+        private static void RightFunc()
+        {
+            using (new SpinLockManager(block)) // Enter
+            {
+                writer.WriteLine("Поток {0} запустился", Thread.CurrentThread.GetHashCode());
+                writer.Flush();
+                
+                // Полезная работа
+                int time = random.Next(10, 200);
+                Thread.Sleep(time);
+
+                writer.WriteLine("Поток [{0}] завершился.", Thread.CurrentThread.GetHashCode());
+                writer.Flush();
+            } // Exit
+        }
         
         static void Main(string[] args)
         {
+            Console.WriteLine("Main - Start");
+            
             Thread[] threads = new Thread[50];
 
             for (int i = 0; i < 50; i++)
@@ -109,6 +140,8 @@ namespace N_008_Thread_Interlocked_SpinLock
                 threads[i] = new Thread(Function);
                 threads[i].Start();
             }
+            
+            Console.WriteLine("Main - End");
             
             Console.ReadKey();
         }
