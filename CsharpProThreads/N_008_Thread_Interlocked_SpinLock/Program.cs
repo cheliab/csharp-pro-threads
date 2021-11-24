@@ -1,10 +1,11 @@
 ﻿using System;
+using System.IO;
 using System.Threading;
 
 // Ручная реализация блокировки
 namespace N_008_Thread_Interlocked_SpinLock
 {
-    class SpinLock
+    public class SpinLock
     {
         /// <summary>
         /// Флаг [0 - блок свободен, 1 - блок занят]
@@ -46,15 +47,68 @@ namespace N_008_Thread_Interlocked_SpinLock
         /// </summary>
         public void Exit()
         {
+            Interlocked.Exchange(ref block, 0);
+        }
+    }
+
+    /// <summary>
+    /// Логика работы конструкции - lock 
+    /// </summary>
+    public class SpinLockManager : IDisposable
+    {
+        private SpinLock _block;
+
+        public SpinLockManager(SpinLock block)
+        {
+            _block = block;
             
+            _block.Enter();
+        }
+        
+        public void Dispose()
+        {
+            _block.Exit();
         }
     }
     
     class Program
     {
+        private static Random random = new Random();
+        private static SpinLock block = new SpinLock(10); // Интервал между проверками 10 мс.
+
+        private static FileStream stream = File.Open("log.txt", FileMode.Create, FileAccess.Write, FileShare.None);
+        private static StreamWriter writer = new StreamWriter(stream);
+
+        /// <summary>
+        /// Метод для потока
+        /// </summary>
+        private static void Function()
+        {
+            using (new SpinLockManager(block)) // вызывается block.Enter();
+            {
+                writer.WriteLine("Поток {0} запускается.", Thread.CurrentThread.GetHashCode());
+                writer.Flush(); // Запись в файл и очистка буфера
+            } // вызывается block.Exit();
+
+            int time = random.Next(10, 200);
+            Thread.Sleep(time); // Ждем рандомное время
+
+            using (new SpinLockManager(block)) // Enter
+            {
+                writer.WriteLine("Поток [{0}] завершается.", Thread.CurrentThread.GetHashCode());
+                writer.Flush();
+            } // Exit
+        }
+        
         static void Main(string[] args)
         {
-            
+            Thread[] threads = new Thread[50];
+
+            for (int i = 0; i < 50; i++)
+            {
+                threads[i] = new Thread(Function);
+                threads[i].Start();
+            }
             
             Console.ReadKey();
         }
