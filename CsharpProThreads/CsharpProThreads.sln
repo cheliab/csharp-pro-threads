@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_007_Thread_Interlocked", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_008_Thread_Interlocked_SpinLock", "N_008_Thread_Interlocked_SpinLock\N_008_Thread_Interlocked_SpinLock.csproj", "{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_009_Thread_Monitor", "N_009_Thread_Monitor\N_009_Thread_Monitor.csproj", "{12A738A5-1315-4018-AFFA-9CF418BA0F74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
