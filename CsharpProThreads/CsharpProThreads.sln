@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_008_Thread_Interlocked_Sp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_009_Thread_Monitor", "N_009_Thread_Monitor\N_009_Thread_Monitor.csproj", "{12A738A5-1315-4018-AFFA-9CF418BA0F74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_010_Thread_Lock", "N_010_Thread_Lock\N_010_Thread_Lock.csproj", "{99695839-F42B-41E1-B14A-D97596D6D42A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12A738A5-1315-4018-AFFA-9CF418BA0F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99695839-F42B-41E1-B14A-D97596D6D42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99695839-F42B-41E1-B14A-D97596D6D42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99695839-F42B-41E1-B14A-D97596D6D42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99695839-F42B-41E1-B14A-D97596D6D42A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
