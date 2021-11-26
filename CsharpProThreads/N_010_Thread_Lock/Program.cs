@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Security;
 using System.Threading;
 
 namespace N_010_Thread_Lock
@@ -44,14 +43,25 @@ namespace N_010_Thread_Lock
         
         static void Main(string[] args)
         {
+            Console.WriteLine("Main - Start");
+            
             var reporterThread = new Thread(Report)
             {
                 IsBackground = true
             };
             reporterThread.Start();
+
+            Thread[] threads = new Thread[150];
+
+            for (int i = 0; i < 150; i++)
+            {
+                threads[i] = new Thread(Function);
+                threads[i].Start();
+            }
             
-            
-            
+            Thread.Sleep(10_000);
+
+            Console.WriteLine("Main - End");
         }
     }
 }
