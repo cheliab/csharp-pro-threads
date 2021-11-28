@@ -1,28 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_001_Thread_Join", "N_001_Thread_Join\N_001_Thread_Join.csproj", "{DFD64E38-8715-4A2A-9954-2AB8117B4F5C}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_001_Thread_Join", "N_001_Thread_Join\N_001_Thread_Join.csproj", "{DFD64E38-8715-4A2A-9954-2AB8117B4F5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_002_Thread_Join", "N_002_Thread_Join\N_002_Thread_Join.csproj", "{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_002_Thread_Join", "N_002_Thread_Join\N_002_Thread_Join.csproj", "{0D25D612-DC8B-4B6A-9825-B5771CDB5FB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_003_Thread", "N_003_Thread\N_003_Thread.csproj", "{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_003_Thread", "N_003_Thread\N_003_Thread.csproj", "{D811DA8E-74AE-478D-AF5F-09A94F2F2E37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort", "N_004_Thread_Abort\N_004_Thread_Abort.csproj", "{3352DDCF-9BB7-4B7A-BF62-78C976B0F21E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_004_Thread_Abort", "N_004_Thread_Abort\N_004_Thread_Abort.csproj", "{3352DDCF-9BB7-4B7A-BF62-78C976B0F21E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_02_CancellationToken", "N_004_Thread_Abort_02_CancellationToken\N_004_Thread_Abort_02_CancellationToken.csproj", "{5B8E5979-07FB-4C82-9473-97754D2CBB30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_004_Thread_Abort_02_CancellationToken", "N_004_Thread_Abort_02_CancellationToken\N_004_Thread_Abort_02_CancellationToken.csproj", "{5B8E5979-07FB-4C82-9473-97754D2CBB30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_004_Thread_Abort_03_OperationCanceledException", "N_004_Thread_Abort_03_OperationCanceledException\N_004_Thread_Abort_03_OperationCanceledException.csproj", "{01AB4E17-25A8-48FE-B0A0-71AB7452C079}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_004_Thread_Abort_03_OperationCanceledException", "N_004_Thread_Abort_03_OperationCanceledException\N_004_Thread_Abort_03_OperationCanceledException.csproj", "{01AB4E17-25A8-48FE-B0A0-71AB7452C079}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_005_Thread_Foreground", "N_005_Thread_Foreground\N_005_Thread_Foreground.csproj", "{A9E2AE82-13A5-4A19-A269-BA10BC896889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_005_Thread_Foreground", "N_005_Thread_Foreground\N_005_Thread_Foreground.csproj", "{A9E2AE82-13A5-4A19-A269-BA10BC896889}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_006_Thread_Priority", "N_006_Thread_Priority\N_006_Thread_Priority.csproj", "{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_006_Thread_Priority", "N_006_Thread_Priority\N_006_Thread_Priority.csproj", "{B2B6763C-24DC-47F2-8B75-5615F97CC9B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_007_Thread_Interlocked", "N_007_Thread_Interlocked\N_007_Thread_Interlocked.csproj", "{9BC19314-81A1-465B-B4D9-21BB381B4C5C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_007_Thread_Interlocked", "N_007_Thread_Interlocked\N_007_Thread_Interlocked.csproj", "{9BC19314-81A1-465B-B4D9-21BB381B4C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_008_Thread_Interlocked_SpinLock", "N_008_Thread_Interlocked_SpinLock\N_008_Thread_Interlocked_SpinLock.csproj", "{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_008_Thread_Interlocked_SpinLock", "N_008_Thread_Interlocked_SpinLock\N_008_Thread_Interlocked_SpinLock.csproj", "{E397B5F9-1A97-4D21-BBA8-09F3C8680FB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_009_Thread_Monitor", "N_009_Thread_Monitor\N_009_Thread_Monitor.csproj", "{12A738A5-1315-4018-AFFA-9CF418BA0F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_009_Thread_Monitor", "N_009_Thread_Monitor\N_009_Thread_Monitor.csproj", "{12A738A5-1315-4018-AFFA-9CF418BA0F74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N_010_Thread_Lock", "N_010_Thread_Lock\N_010_Thread_Lock.csproj", "{99695839-F42B-41E1-B14A-D97596D6D42A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_010_Thread_Lock", "N_010_Thread_Lock\N_010_Thread_Lock.csproj", "{99695839-F42B-41E1-B14A-D97596D6D42A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "N_011_Thread_Monitor_Structure", "N_011_Thread_Monitor_Structure\N_011_Thread_Monitor_Structure.csproj", "{A170BE8A-D2F5-4DD1-8A57-8AAB64EBF7F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -78,5 +83,15 @@ Global
 		{99695839-F42B-41E1-B14A-D97596D6D42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99695839-F42B-41E1-B14A-D97596D6D42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99695839-F42B-41E1-B14A-D97596D6D42A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A170BE8A-D2F5-4DD1-8A57-8AAB64EBF7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A170BE8A-D2F5-4DD1-8A57-8AAB64EBF7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A170BE8A-D2F5-4DD1-8A57-8AAB64EBF7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A170BE8A-D2F5-4DD1-8A57-8AAB64EBF7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {201C324A-9C98-49E8-9DC3-914740CD79C7}
 	EndGlobalSection
 EndGlobal
