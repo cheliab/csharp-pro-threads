@@ -28,6 +28,9 @@ namespace N_011_Thread_Monitor_Structure
         /// (которые будут находиться в куче, а не в стеке)
         /// </remarks>
         private static int block = 0;
+        
+        // для сравнения поведения lock (последний скрин)
+        // private static object block = new object();
 
         private static void GetObjectAddress(object obj)
         {
@@ -37,7 +40,7 @@ namespace N_011_Thread_Monitor_Structure
             Console.WriteLine(pObj.ToString());
         }
 
-        private static void Function() 
+        private static void MonitorFunction() 
         {
             for (int i = 0; i < 50; i++) 
             {
@@ -55,13 +58,33 @@ namespace N_011_Thread_Monitor_Structure
                 // но на него не была установлена блокировка
                 blockObj = (object)block;
                 GetObjectAddress(blockObj);
-                Monitor.Exit(blockObj);
+                Monitor.Exit(blockObj); // тут будет исключение так как пытаемся снять блокировку там где ее нет
+            }
+        }
+
+        private static void LockFunction()
+        {
+            for (int i = 0; i < 50; i++)
+            {
+                lock((object)block)
+                {
+                    Console.WriteLine(++counter);
+                }
             }
         }
 
         static void Main(string[] args)
         {
-            Function();
+            //MonitorFunction();
+
+            // ------------------------------------------
+
+            Thread[] threads = new Thread[3];
+            for (int i = 0; i < 3; i++)
+            {
+                threads[i] = new Thread(LockFunction);
+                threads[i].Start();
+            }
 
             Console.ReadKey();
         }
