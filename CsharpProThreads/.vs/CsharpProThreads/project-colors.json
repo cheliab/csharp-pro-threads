@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "99695839-f42b-41e1-b14a-d97596d6d42a": {
+      "ProjectGuid": "99695839-f42b-41e1-b14a-d97596d6d42a",
+      "DisplayName": "N_010_Thread_Lock",
+      "ColorIndex": 0
+    },
+    "a170be8a-d2f5-4dd1-8a57-8aab64ebf7f6": {
+      "ProjectGuid": "a170be8a-d2f5-4dd1-8a57-8aab64ebf7f6",
+      "DisplayName": "N_011_Thread_Monitor_Structure",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
